@@ -16,6 +16,10 @@
 
 header {
   padding: 20px 0;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header .right-column {
@@ -31,6 +35,7 @@ header .navbar-nav {
 header .navbar-nav .nav-item a {
   color: #424242;
   font-weight: bold;
+  font-size: 19px;
 }
 
 header .navbar-nav {
@@ -47,6 +52,7 @@ header .navbar-nav .nav-item .orange-link {
   border-radius: 20px;
   transition: 0.4s;
   box-shadow: 0px 25px 20px -20px #ffa662;
+  font-size: 16px;
 }
 
 header .navbar-nav .nav-item .orange-link:hover {
@@ -57,15 +63,15 @@ header .navbar-nav .nav-item .orange-link:hover {
 
 .hero-section {
   position: relative;
-  height: 1150px;
+  height: 1170px;
   color: #fff;
 }
 
-.hero-section .col-xl-7 {
-  padding-top: 150px;
+.hero-section .col-xl-5 {
+  padding-top: 170px;
 }
 
-.hero-section .col-xl-5 {
+.hero-section .col-xl-7 {
   display: flex;
   align-items: center;
 }
@@ -82,7 +88,7 @@ header .navbar-nav .nav-item .orange-link:hover {
 
 .hero-section span {
   font-family: Serius, sans-serif;
-  font-size: 140px;
+  font-size: 120px;
   letter-spacing: -5px;
   background-image: linear-gradient(to right, #ff9a3c, #e84917);
   -webkit-background-clip: text;
@@ -92,10 +98,10 @@ header .navbar-nav .nav-item .orange-link:hover {
 }
 
 .hero-section h1 {
-  font-size: 70px;
+  font-size: 54px;
   letter-spacing: 3px;
   font-weight: 800;
-  width: 790px;
+  width: 600px;
 }
 
 .hero-section h1 br {
@@ -103,14 +109,15 @@ header .navbar-nav .nav-item .orange-link:hover {
 }
 
 .hero-section .hero-icon {
-  font-size: 90px;
+  font-size: 52px;
 }
 
 .hero-section p {
-  font-size: 20px;
-  letter-spacing: 8%;
+  font-size: 18px;
+  letter-spacing: 0.6px;
   text-transform: capitalize;
   line-height: 40px;
+  font-weight: 400;
 }
 
 .hero-section .hero-button-holder {
@@ -165,20 +172,20 @@ header .navbar-nav .nav-item .orange-link:hover {
 .about-us h2 {
   color: #303030;
   font-weight: 800;
-  font-size: 70px;
+  font-size: 60px;
   letter-spacing: 3px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   margin: 0;
 }
 
 .about-us p {
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 36px;
-
+  margin: 0;
   text-transform: capitalize;
   color: #424242;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 .about-us a {
@@ -204,8 +211,7 @@ header .navbar-nav .nav-item .orange-link:hover {
   display: flex;
   align-items: center;
   gap: 38px;
-
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .about-us .img-group-holders .img-group-holder {
@@ -214,8 +220,12 @@ header .navbar-nav .nav-item .orange-link:hover {
   align-items: center;
 }
 
+.about-us .img-group-holders .img-group-holder img {
+  max-width: 70%;
+}
+
 .about-us .img-group-holder span {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 2px;
 }
@@ -227,7 +237,7 @@ header .navbar-nav .nav-item .orange-link:hover {
 }
 
 .gallery h2 {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 800;
   letter-spacing: 3px;
   padding: 150px 0;
@@ -236,6 +246,14 @@ header .navbar-nav .nav-item .orange-link:hover {
   background-clip: text;
   color: transparent;
   text-align: center;
+}
+
+.gallery img {
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
 }
 
 .gallery .column {
@@ -257,25 +275,34 @@ header .navbar-nav .nav-item .orange-link:hover {
   overflow: hidden;
 }
 
+.breakfast .col-xl-6 {
+  padding-top: 30px;
+}
+
 .breakfast h2 {
-  font-size: 70px;
+  font-size: 52px;
   font-weight: 800;
   letter-spacing: 2px;
   color: #303030;
   text-transform: capitalize;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
+  margin: 0;
 }
 
 .breakfast .breakfast-paragraph {
   display: flex;
   align-items: center;
   gap: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+}
+
+.breakfast .breakfast-paragraph img {
+  height: 144px;
 }
 
 .breakfast p {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 32px;
 
   text-transform: capitalize;
   color: #424242;
@@ -294,7 +321,7 @@ header .navbar-nav .nav-item .orange-link:hover {
 }
 
 .online-menu h2 {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 800;
   letter-spacing: 3px;
   padding-top: 200px;
@@ -309,7 +336,7 @@ header .navbar-nav .nav-item .orange-link:hover {
   font-size: 19px;
   font-weight: 500;
   letter-spacing: 1px;
-  line-height: 36px;
+  line-height: 40px;
   padding-bottom: 100px;
   text-transform: capitalize;
 }
@@ -453,33 +480,34 @@ header .navbar-nav .nav-item .orange-link:hover {
   color: #fff;
 }
 
-.footer .col-lg-6 {
+.footer .col-xl-5 {
   padding-top: 60px;
 }
 
-.footer .col-lg-6 img {
+.footer .col-xl-5 img {
   padding-bottom: 50px;
 }
 
-.footer .col-lg-6 p {
-  font-size: 19px;
+.footer .col-xl-5 p {
+  font-size: 15px;
   font-weight: 500;
 
   line-height: 35px;
   color: #a9a9a9;
   text-transform: capitalize;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 
-.footer .col-lg-6 ul {
+.footer .col-xl-5 ul {
   list-style-type: none;
   display: flex;
   gap: 40px;
   padding: 0;
+  margin: 0;
 }
 
 .footer .col-lg-3 {
-  padding-top: 220px;
+  padding-top: 200px;
 }
 
 .footer .col-lg-3 h3 {
@@ -487,7 +515,8 @@ header .navbar-nav .nav-item .orange-link:hover {
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
+  margin: 0;
 }
 
 .footer .footer-kontakt-div {
@@ -526,9 +555,10 @@ header .navbar-nav .nav-item .orange-link:hover {
 .footer .copyright {
   padding-top: 45px;
   letter-spacing: 4px;
-  font-size: 16px;
+  font-size: 14px;
   font-style: italic;
   text-align: right;
+  margin: 0;
 }
 
 /* Responsive */
@@ -554,7 +584,7 @@ header .navbar-nav .nav-item .orange-link:hover {
 
 @media only screen and (max-width: 1620px) {
   .footer {
-    height: 680px;
+    height: 720px;
   }
 }
 
@@ -569,13 +599,53 @@ header .navbar-nav .nav-item .orange-link:hover {
 
 @media only screen and (max-width: 1399px) {
   .hero-section h1 {
-    font-size: 64px;
+    font-size: 48px;
   }
   .hero-section .hero-icon {
-    font-size: 70px;
+    font-size: 40px;
   }
+  .hero-section p {
+    font-size: 16px;
+    letter-spacing: 0.2px;
+  }
+
   .gallery {
     height: 1210px;
+  }
+  .about-us .col-xl-6 {
+    padding-top: 10px;
+  }
+  .about-us h2 {
+    font-size: 48px;
+    padding-bottom: 10px;
+  }
+  .about-us p {
+    padding-bottom: 50px;
+  }
+  .about-us .img-group-holders .img-group-holder img {
+    max-width: 60%;
+  }
+  .about-us .img-group-holders .img-group-holder span {
+    font-size: 14px;
+  }
+  .gallery h2 {
+    font-size: 48px;
+  }
+  .breakfast h2 {
+    font-size: 48px;
+    padding-bottom: 20px;
+  }
+  .breakfast .breakfast-paragraph img {
+    height: 122px;
+  }
+  .breakfast .breakfast-paragraph p {
+    line-height: 28px;
+  }
+  .online-menu h2 {
+    font-size: 48px;
+  }
+  .online-menu p {
+    font-size: 16px;
   }
   .contact-us iframe {
     width: 560px;
@@ -586,6 +656,9 @@ header .navbar-nav .nav-item .orange-link:hover {
 }
 
 @media only screen and (max-width: 1199px) {
+  header .navbar-nav .nav-item a {
+    font-size: 16px;
+  }
   header .navbar-nav {
     gap: 8px;
   }
@@ -594,7 +667,7 @@ header .navbar-nav .nav-item .orange-link:hover {
     height: 2100px;
     color: #fff;
   }
-  .hero-section .col-xl-6:last-child {
+  .hero-section .col-xl-7:last-child {
     padding-top: 20px;
   }
 
@@ -641,6 +714,7 @@ header .navbar-nav .nav-item .orange-link:hover {
     flex-basis: 50%;
     padding-bottom: 30px;
   }
+
   .footer {
     height: 720px;
   }
@@ -935,7 +1009,7 @@ header .navbar-nav .nav-item .orange-link:hover {
     height: 1810px;
   }
   .footer {
-    height: 1420px;
+    height: 1410px;
   }
 }
 
@@ -946,6 +1020,9 @@ header .navbar-nav .nav-item .orange-link:hover {
 }
 
 @media only screen and (max-width: 575px) {
+  .hero-section .col-xl-5 {
+    padding-top: 150px;
+  }
   .header ul li {
     padding-bottom: 40px;
   }
@@ -1023,7 +1100,7 @@ header .navbar-nav .nav-item .orange-link:hover {
     font-size: 14px;
   }
   .footer {
-    height: 1380px;
+    height: 1370px;
   }
   .footer .col-lg-6 p {
     font-size: 14px;
@@ -1044,7 +1121,7 @@ header .navbar-nav .nav-item .orange-link:hover {
     height: 1340px;
   }
   .footer {
-    height: 1420px;
+    height: 1410px;
   }
 }
 
