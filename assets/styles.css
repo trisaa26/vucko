@@ -584,7 +584,7 @@ header .navbar-nav .nav-item .orange-link:hover {
 
 @media only screen and (max-width: 1620px) {
   .footer {
-    height: 720px;
+    height: 690px;
   }
 }
 
@@ -649,6 +649,9 @@ header .navbar-nav .nav-item .orange-link:hover {
   }
   .contact-us iframe {
     width: 560px;
+  }
+  .footer {
+    height: 720px;
   }
   .footer .col-lg-6 p {
     font-size: 16px;
