@@ -33,9 +33,9 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <header>
-      <section class="header">
+      <section class="header" id="navbar">
         <div class="container">
           <div class="row">
             <div class="col-2">
@@ -60,19 +60,35 @@
                   <div class="collapse navbar-collapse" id="navmenu">
                     <ul class="navbar-nav ms-auto">
                       <li class="nav-item">
-                        <a href="" class="nav-link">Početna</a>
+                        <a
+                          href="#home"
+                          class="nav-link nav-black active nav-actives"
+                          >Početna</a
+                        >
                       </li>
                       <li class="nav-item">
-                        <a href="#about-us" class="nav-link">O Nama</a>
+                        <a
+                          href="#about-us"
+                          class="nav-link nav-black nav-actives"
+                          >O Nama</a
+                        >
                       </li>
                       <li class="nav-item">
-                        <a href="#menu" class="nav-link">Meni</a>
+                        <a href="#menu" class="nav-link nav-black nav-actives"
+                          >Meni</a
+                        >
                       </li>
                       <li class="nav-item">
-                        <a href="#gallery" class="nav-link">Galerija</a>
+                        <a
+                          href="#gallery"
+                          class="nav-link nav-black nav-actives"
+                          >Galerija</a
+                        >
                       </li>
                       <li class="nav-item">
-                        <a href="#contact-us" class="nav-link orange-link"
+                        <a
+                          href="#contact-us"
+                          class="nav-link orange-link nav-actives"
                           >Kontaktirajte Nas</a
                         >
                       </li>
@@ -91,7 +107,7 @@
       </section>
     </header>
 
-    <section class="hero-section">
+    <section class="hero-section" id="home">
       <div
         class="bg"
         style="
@@ -118,6 +134,7 @@
                   <br />
                   avantura
                 </p>
+
                 <div class="hero-button-holder">
                   <a
                     href="#"
@@ -134,6 +151,11 @@
                     >Meni</a
                   >
                 </div>
+                <img
+                  src="assets/img/hero-section-3-img.png"
+                  alt=""
+                  class="img-fluid hero-section-image"
+                />
                 <div class="hero-images-holder">
                   <img
                     src="assets/img/hero-section-1-img.png"
@@ -186,10 +208,12 @@
             <h2>O Nama</h2>
             <p>
               Naš restoran je simfonija ukusa, nudeći izuzetnu lepezu ukusnih
-              jela koja će sigurno oduševiti vaše nepce. Bez obzira da li
-              tražite romantičnu večeru, porodičnu proslavu ili opuštenu večeru,
-              naš topao i privlačan ambijent pruža savršeno okruženje za svaku
-              priliku.
+              jela <br />
+              koja će sigurno oduševiti vaše nepce. Bez obzira da li tražite
+              <br />
+              romantičnu večeru, porodičnu proslavu ili opuštenu večeru, naš
+              topao i <br />
+              privlačan ambijent pruža savršeno okruženje za svaku priliku.
             </p>
             <a href="#" class="hero-link">Istažite Više</a>
             <div class="img-group-holders">
@@ -248,7 +272,7 @@
                   <img
                     src="assets/img/gallery-5-stars.png"
                     alt=""
-                    class="img-fluid"
+                    class="img-fluid gallery-stars"
                   />
                   <div class="gallery-span-holder">
                     <span>Spicy Cevapi</span>
@@ -272,7 +296,7 @@
                   <img
                     src="assets/img/gallery-5-stars.png"
                     alt=""
-                    class="img-fluid"
+                    class="img-fluid gallery-stars"
                   />
                   <div class="gallery-span-holder">
                     <span>Spicy Cevapi</span>
@@ -296,7 +320,7 @@
                   <img
                     src="assets/img/gallery-5-stars.png"
                     alt=""
-                    class="img-fluid"
+                    class="img-fluid gallery-stars"
                   />
                   <div class="gallery-span-holder">
                     <span>Spicy Cevapi</span>
@@ -320,7 +344,7 @@
                   <img
                     src="assets/img/gallery-5-stars.png"
                     alt=""
-                    class="img-fluid"
+                    class="img-fluid gallery-stars"
                   />
                   <div class="gallery-span-holder">
                     <span>Spicy Cevapi</span>
@@ -344,7 +368,7 @@
                   <img
                     src="assets/img/gallery-5-stars.png"
                     alt=""
-                    class="img-fluid"
+                    class="img-fluid gallery-stars"
                   />
                   <div class="gallery-span-holder">
                     <span>Spicy Cevapi</span>
@@ -368,7 +392,7 @@
                   <img
                     src="assets/img/gallery-5-stars.png"
                     alt=""
-                    class="img-fluid"
+                    class="img-fluid gallery-stars"
                   />
                   <div class="gallery-span-holder">
                     <span>Spicy Cevapi</span>
@@ -392,7 +416,7 @@
                   <img
                     src="assets/img/gallery-5-stars.png"
                     alt=""
-                    class="img-fluid"
+                    class="img-fluid gallery-stars"
                   />
                   <div class="gallery-span-holder">
                     <span>Spicy Cevapi</span>
@@ -416,7 +440,7 @@
                   <img
                     src="assets/img/gallery-5-stars.png"
                     alt=""
-                    class="img-fluid"
+                    class="img-fluid gallery-stars"
                   />
                   <div class="gallery-span-holder">
                     <span>Spicy Cevapi</span>
@@ -484,10 +508,13 @@
             <div class="col-xl-6">
               <h2>Online Meni</h2>
               <p>
-                Budite naš gost, a za porudžbine i dostavu nas pozovite 066 433
-                300. Tu je naravno i mogućnost online narudžbe direktno sa naše
-                web ili facebook stranice, te preko mobilne aplikacije koju za
-                vaše Android/iOS mobilne uređaje možete preuzeti <br />
+                Budite naš gost, a za porudžbine i dostavu nas pozovite 066
+                <br />
+                433 300. Tu je naravno i mogućnost online narudžbe direktno
+                <br />
+                sa naše web ili facebook stranice, te preko mobilne aplikacije
+                <br />
+                koju za vaše Android/iOS mobilne uređaje možete preuzeti <br />
                 putem linkova pozicioniranim u dnu naše web stranice.
               </p>
               <div class="online-menu-link-holder">
@@ -571,20 +598,20 @@
           <div class="contact-us-p-div">
             <iconify-icon
               icon="mingcute:location-fill"
-              width="40"
+              width="30"
             ></iconify-icon>
             <p>Nikole Tesle 21, Bijeljina</p>
           </div>
           <div class="contact-us-p-div">
-            <iconify-icon icon="ph:phone-fill" width="40"></iconify-icon>
+            <iconify-icon icon="ph:phone-fill" width="30"></iconify-icon>
             <p>+387 66 433 300</p>
           </div>
           <div class="contact-us-p-div">
-            <iconify-icon icon="tabler:clock" width="40"></iconify-icon>
+            <iconify-icon icon="tabler:clock" width="30"></iconify-icon>
             <p>Pon - Sub 08:00 - 23:00</p>
           </div>
           <div class="contact-us-p-div">
-            <iconify-icon icon="tabler:clock" width="40"></iconify-icon>
+            <iconify-icon icon="tabler:clock" width="30"></iconify-icon>
             <p>Nedjelja 09:00 - 23:00</p>
           </div>
         </div>

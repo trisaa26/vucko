@@ -17,9 +17,23 @@
 header {
   padding: 20px 0;
   background-color: #fff;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
+  transition: 0.3s;
+  width: 100%;
+}
+
+header.sticky {
+  padding: 5px 0;
+}
+
+header.sticky img {
+  width: 120px;
+}
+
+header img {
+  transition: 0.3s;
 }
 
 header .right-column {
@@ -36,6 +50,19 @@ header .navbar-nav .nav-item a {
   color: #424242;
   font-weight: bold;
   font-size: 19px;
+  transition: color 0.3s;
+}
+
+header .navbar-nav .nav-item a:hover {
+  color: #e84917;
+}
+
+header .navbar-nav .nav-item a:active {
+  color: #e84917;
+}
+
+.nav-link.nav-black.active {
+  color: #e84917;
 }
 
 header .navbar-nav {
@@ -61,14 +88,21 @@ header .navbar-nav .nav-item .orange-link:hover {
   background-color: #fff;
 }
 
+.nav-link.orange-link.nav-actives.active {
+  background-image: none;
+  color: #e84917;
+  background-color: #fff;
+}
+
 .hero-section {
   position: relative;
-  height: 1170px;
+  height: 1040px;
   color: #fff;
+  margin-top: 123px;
 }
 
 .hero-section .col-xl-5 {
-  padding-top: 170px;
+  padding-top: 100px;
 }
 
 .hero-section .col-xl-7 {
@@ -104,20 +138,19 @@ header .navbar-nav .nav-item .orange-link:hover {
   width: 600px;
 }
 
-.hero-section h1 br {
-  display: none;
-}
-
 .hero-section .hero-icon {
   font-size: 52px;
 }
 
 .hero-section p {
-  font-size: 18px;
-  letter-spacing: 0.6px;
+  font-size: 14px;
   text-transform: capitalize;
-  line-height: 40px;
+  line-height: 32px;
   font-weight: 400;
+}
+
+.hero-section .hero-section-image {
+  display: none;
 }
 
 .hero-section .hero-button-holder {
@@ -179,9 +212,9 @@ header .navbar-nav .nav-item .orange-link:hover {
 }
 
 .about-us p {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 36px;
+  line-height: 32px;
   margin: 0;
   text-transform: capitalize;
   color: #424242;
@@ -333,10 +366,10 @@ header .navbar-nav .nav-item .orange-link:hover {
 }
 
 .online-menu p {
-  font-size: 19px;
+  font-size: 14px;
+  line-height: 32px;
   font-weight: 500;
-  letter-spacing: 1px;
-  line-height: 40px;
+  margin: 0;
   padding-bottom: 100px;
   text-transform: capitalize;
 }
@@ -457,6 +490,8 @@ header .navbar-nav .nav-item .orange-link:hover {
   display: flex;
   justify-content: space-between;
   padding-top: 80px;
+  padding-left: 140px;
+  padding-right: 140px;
 }
 
 .contact-us .contact-us-p-div {
@@ -467,7 +502,7 @@ header .navbar-nav .nav-item .orange-link:hover {
 
 .contact-us .contact-us-p-div p {
   margin: 0;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
   line-height: 28px;
@@ -570,9 +605,6 @@ header .navbar-nav .nav-item .orange-link:hover {
 }
 
 @media only screen and (max-width: 1680px) {
-  .about-us p br {
-    display: none;
-  }
   .about-us .img-group-holders {
     gap: 0;
     justify-content: space-between;
@@ -592,9 +624,6 @@ header .navbar-nav .nav-item .orange-link:hover {
   .gallery {
     height: 1310px;
   }
-  .online-menu p br {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 1399px) {
@@ -605,8 +634,7 @@ header .navbar-nav .nav-item .orange-link:hover {
     font-size: 40px;
   }
   .hero-section p {
-    font-size: 16px;
-    letter-spacing: 0.2px;
+    line-height: 28px;
   }
 
   .gallery {
@@ -621,6 +649,10 @@ header .navbar-nav .nav-item .orange-link:hover {
   }
   .about-us p {
     padding-bottom: 50px;
+    line-height: 28px;
+  }
+  .about-us p br {
+    display: none;
   }
   .about-us .img-group-holders .img-group-holder img {
     max-width: 60%;
@@ -645,10 +677,14 @@ header .navbar-nav .nav-item .orange-link:hover {
     font-size: 48px;
   }
   .online-menu p {
-    font-size: 16px;
+    line-height: 28px;
   }
   .contact-us iframe {
     width: 560px;
+  }
+  .contact-us .contact-us-p-divs {
+    padding-left: 100px;
+    padding-right: 100px;
   }
   .footer {
     height: 720px;
@@ -667,13 +703,23 @@ header .navbar-nav .nav-item .orange-link:hover {
   }
   .hero-section {
     position: relative;
-    height: 2100px;
+    height: 1970px;
     color: #fff;
+  }
+  .hero-section .hero-section-image {
+    display: initial;
+    padding-top: 100px;
+  }
+  .hero-section .col-xl-7 img {
+    display: none;
+  }
+  .hero-section .hero-images-holder {
+    justify-content: center;
+    padding-top: 0;
   }
   .hero-section .col-xl-7:last-child {
     padding-top: 20px;
   }
-
   .about-us .left-col {
     text-align: center;
     padding-bottom: 45px;
@@ -703,7 +749,6 @@ header .navbar-nav .nav-item .orange-link:hover {
   .online-menu p {
     padding-bottom: 50px;
   }
-
   .contact-us iframe {
     width: 470px;
   }
@@ -717,7 +762,10 @@ header .navbar-nav .nav-item .orange-link:hover {
     flex-basis: 50%;
     padding-bottom: 30px;
   }
-
+  .contact-us .contact-us-p-divs {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .footer {
     height: 720px;
   }
@@ -817,15 +865,16 @@ header .navbar-nav .nav-item .orange-link:hover {
   }
 
   .hero-section {
-    height: 1800px;
+    height: 1670px;
   }
-  .hero-section .col-xl-6:first-child {
-    padding-top: 50px;
+  .hero-section .col-xl-5 {
+    padding-top: 80px;
   }
   .hero-section h1 {
-    font-size: 64px;
-    letter-spacing: 2px;
     width: auto;
+  }
+  .hero-section .hero-section-image {
+    padding-top: 50px;
   }
   .hero-section .hero-icon {
     font-size: 80px;
@@ -892,7 +941,10 @@ header .navbar-nav .nav-item .orange-link:hover {
 
 @media only screen and (max-width: 767px) {
   .hero-section {
-    height: 1460px;
+    height: 1330px;
+  }
+  .hero-section .col-xl-5 {
+    padding-top: 80px;
   }
   .hero-section p br {
     display: none;
@@ -914,10 +966,6 @@ header .navbar-nav .nav-item .orange-link:hover {
   .hero-section .hero-icon {
     font-size: 60px;
   }
-  .hero-section p {
-    font-size: 18px;
-    letter-spacing: 2px;
-  }
   .hero-section .hero-images-holder {
     gap: 0;
     justify-content: space-between;
@@ -927,9 +975,6 @@ header .navbar-nav .nav-item .orange-link:hover {
   }
   .about-us h2 {
     font-size: 48px;
-  }
-  .about-us p {
-    font-size: 16px;
   }
   .about-us .img-group-holders {
     flex-wrap: wrap;
@@ -967,9 +1012,6 @@ header .navbar-nav .nav-item .orange-link:hover {
     font-size: 48px;
     padding-top: 70px;
     padding-bottom: 50px;
-  }
-  .online-menu p {
-    font-size: 16px;
   }
   .contact-us iframe {
     height: 620px;
@@ -1024,7 +1066,7 @@ header .navbar-nav .nav-item .orange-link:hover {
 
 @media only screen and (max-width: 575px) {
   .hero-section .col-xl-5 {
-    padding-top: 150px;
+    padding-top: 80px;
   }
   .header ul li {
     padding-bottom: 40px;
@@ -1042,10 +1084,6 @@ header .navbar-nav .nav-item .orange-link:hover {
   .hero-section .hero-link {
     padding: 20px 50px;
   }
-  .hero-section p {
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
   .container-fluid {
     padding: 0 20px !important;
   }
@@ -1053,8 +1091,44 @@ header .navbar-nav .nav-item .orange-link:hover {
     font-size: 34px;
   }
   .gallery {
-    height: 3800px;
+    height: 4800px;
   }
+  .gallery .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .gallery .column {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .gallery .column .gallery-stars {
+    width: 50%;
+    height: auto;
+    padding: 0 10px;
+    align-self: flex-start;
+  }
+
+  .gallery .column img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .gallery .column .gallery-span-holder {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    text-align: left;
+    padding: 0 10px;
+  }
+
   .gallery .column {
     padding-bottom: 100px;
   }
@@ -1115,14 +1189,21 @@ header .navbar-nav .nav-item .orange-link:hover {
 
 @media only screen and (max-width: 540px) {
   .hero-section {
-    height: 1400px;
+    height: 1280px;
+  }
+  .gallery {
+    height: 4650px;
   }
 }
 
 @media only screen and (max-width: 482px) {
   .hero-section {
-    height: 1340px;
+    height: 1200px;
   }
+  .gallery {
+    height: 4200px;
+  }
+
   .footer {
     height: 1410px;
   }
@@ -1130,7 +1211,22 @@ header .navbar-nav .nav-item .orange-link:hover {
 
 @media only screen and (max-width: 440px) {
   .hero-section {
-    height: 1300px;
+    height: 1180px;
+  }
+  .online-menu p br {
+    display: none;
+  }
+  .gallery {
+    height: 3950px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .hero-section {
+    height: 1160px;
+  }
+  .gallery {
+    height: 3850px;
   }
 }
 
@@ -1147,7 +1243,16 @@ header .navbar-nav .nav-item .orange-link:hover {
 }
 
 @media only screen and (max-width: 390px) {
+  .hero-section {
+    height: 1120px;
+  }
   .gallery {
-    height: 3700px;
+    height: 3650px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .gallery {
+    height: 3600px;
   }
 }
