@@ -20,6 +20,7 @@ menuLinks.forEach((link) => {
 //
 
 let mybutton = document.getElementById("btn-to-top");
+// console.log(mybutton);
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
